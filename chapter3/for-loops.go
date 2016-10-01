@@ -9,6 +9,5 @@ func main() {
 			} else {
 				fmt.Println(i, " odd")
 			}
-		fmt.Println(i)
 	}
 }
