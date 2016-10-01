@@ -14,6 +14,8 @@ func main(){
 	fmt.Println(helloWorld)
 
 	fmt.Println(hw)
+
+	printText()
 }
 
 func printText() {
