@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var x string = "Hello World!!!"
+
 func main(){
 	var helloWorld string = "Hello World!"
 
@@ -9,9 +11,11 @@ func main(){
 
 	hw = "Hello World!!"
 
-	x := "Hellow World!!!"
-
 	fmt.Println(helloWorld)
 
 	fmt.Println(hw)
+}
+
+func printText() {
+	fmt.Println(x)
 }
