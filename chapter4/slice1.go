@@ -16,4 +16,6 @@ func main() {
 	fmt.Println(slice1, slice2)
 
 	fmt.Println(slice1, slice3)
+
+	fmt.Println(slice1[0:2])
 }
