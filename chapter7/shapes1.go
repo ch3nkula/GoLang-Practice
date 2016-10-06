@@ -6,6 +6,11 @@ package main
 
 import ("fmt"; "math")
 
+/* Adding the interface support */
+type Shape interface {
+	area() float64
+}
+
 /* Struct for Circle */
 type Circle struct {
 	x, y, r float64
@@ -36,6 +41,17 @@ func (c *Circle) area() float64 {
 	return math.Pi * c.r * c.r
 }
 
+/* Interface is really useful when finding the total area i.e. the sum of 
+   all the areas of each of the shapes
+*/
+func totalArea(shapes ...Shape) float64 {
+	var area float64
+	for _, s := range shapes {
+		area += s.area()
+	}
+	return area
+}
+
 /* This is the main function */
 func main() {
 	c := Circle{0, 0, 5}
@@ -44,5 +60,7 @@ func main() {
 
 	fmt.Println("Area of the rectangle is: ", r.area())
 
-	fmt.Println("Aread of the circle is: ", c.area())
+	fmt.Println("Area of the circle is: ", c.area())
+
+	fmt.Println("Sum of the areas: ", totalArea(&c, &r))
 }
