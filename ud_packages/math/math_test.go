@@ -10,10 +10,20 @@ type testpair struct {
 	average float64
 }
 
-var tests = []testpair{
+type testpairsum struct {
+	values []int
+	sum int
+}
+
+var tests = []testpair {
 	{ []float64{1, 2}, 1.5 },
 	{ []float64{1, 1, 1, 1, 1, 1}, 1 },
 	{ []float64{-1, 1}, 0 },
+}
+
+var testsum = []testpairsum {
+	{ []int{1, 2, 3, 4, 5}, 15 },
+	{ []int{1, 2, 3}, 6 },
 }
 
 /* Testing the Average function */
@@ -47,6 +57,20 @@ func TestAveragePair(t *testing.T) {
 					"For", pair.values,
 					"expected", pair.average,
 					"got", v,
+				)
+		}
+	}
+}
+
+/* Testing sum pairs */
+func TestSumPair(t *testing.T) {
+	for _, pair := range testsum {
+		s := Sum(pair.values...)
+		if s != pair.sum {
+			t.Error(
+					"For", pair.values,
+					"expected", pair.sum,
+					"got", s,
 				)
 		}
 	}
