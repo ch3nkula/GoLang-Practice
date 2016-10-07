@@ -11,5 +11,9 @@ func main() {
 	/* Use the package */
 	avg := ud_math.Average(xs)
 
-	fmt.Println(avg)
+	sum := ud_math.Sum(1, 2, 3, 4)
+
+	fmt.Println("Sum is: ", sum)
+
+	fmt.Println("Average is: ", avg)
 }
