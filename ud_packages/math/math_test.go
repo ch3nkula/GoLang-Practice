@@ -4,6 +4,18 @@ package math
 
 import "testing"
 
+/* Test pair structure */
+type testpair struct {
+	values []float64
+	average float64
+}
+
+var tests = []testpair{
+	{ []float64{1, 2}, 1.5 },
+	{ []float64{1, 1, 1, 1, 1, 1}, 1 },
+	{ []float64{-1, 1}, 0 },
+}
+
 /* Testing the Average function */
 func TestAverage(t *testing.T) {
 	var v float64
@@ -23,5 +35,19 @@ func TestSum(t *testing.T) {
 
 	if s != 10 {
 		t.Error("Expected 10, got ", s)
+	}
+}
+
+/* Testing average pairs */
+func TestAveragePair(t *testing.T) {
+	for _, pair := range tests {
+		v := Average(pair.values)
+		if v != pair.average {
+			t.Error(
+					"For", pair.values,
+					"expected", pair.average,
+					"got", v,
+				)
+		}
 	}
 }
