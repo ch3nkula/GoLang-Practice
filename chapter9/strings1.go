@@ -43,4 +43,12 @@ func main() {
 			/* "TEST" */
 			strings.ToUpper("test"),
 		)
+
+	/* Converting a byte to a string and vise versa */
+	arr := []byte("test")
+	str := string([]byte{'t', 'e', 's', 't'})
+
+	fmt.Println("This is the byte: ", arr)
+
+	fmt.Println("This is the string: ", str)
 }
