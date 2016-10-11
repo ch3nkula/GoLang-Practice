@@ -17,5 +17,6 @@ func main() {
 
 	defer file.Close()
 
+	/* Write to the file */
 	file.WriteString("test")
 }
