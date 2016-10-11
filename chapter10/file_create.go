@@ -15,6 +15,7 @@ func main() {
 		return
 	}
 
+	/* Execute the Close() if error occurs */
 	defer file.Close()
 
 	/* Write to the file */
