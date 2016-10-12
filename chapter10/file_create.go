@@ -2,6 +2,7 @@
 
 package main
 
+/* Import packages */
 import (
 	"os"
 )
