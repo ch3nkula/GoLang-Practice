@@ -28,6 +28,21 @@ func (this ByName) Swap(i, j int) {
 	this[i], this[j] = this[j], this[i]
 }
 
+/* Sorting by Age is also possible */
+type ByAge []Person
+
+func (this ByAge) Len() int {
+	return len(this)
+}
+
+func (this ByAge) Less(i, j int) bool {
+	return this[i].Age < this[j].Age
+}
+
+func (this ByAge) Swap(i, j int) {
+	this[i], this[j] = this[j], this[i]
+}
+
 /* Main function */
 func main() {
 	kids := []Person{
@@ -35,7 +50,13 @@ func main() {
 		{"Jack", 10},
 	}
 
-	/* Sort the array of structures */
+	/* Sort the slice of structures by name */
+	fmt.Println("Sorting by Name...")
 	sort.Sort(ByName(kids))
+	fmt.Println(kids)
+
+	/* Sort by Age */
+	fmt.Println("Sorting by Age...")
+	sort.Sort(ByAge(kids))
 	fmt.Println(kids)
 }
