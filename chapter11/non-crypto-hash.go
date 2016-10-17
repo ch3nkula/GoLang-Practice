@@ -15,7 +15,7 @@ import (
 /* Get hash function definition */
 
 func getHash(filename string) (uint32, error) {
-	bs, err := ioutil.ReadFile("test1.txt")
+	bs, err := ioutil.ReadFile(filename)
 
 	if err != nil {
 		return 0, err
