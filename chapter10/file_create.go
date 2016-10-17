@@ -1,7 +1,3 @@
-/**
- * Creating a file in GoLang 
- */
-
 package main
 
 // Import packages

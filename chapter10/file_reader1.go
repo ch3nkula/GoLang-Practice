@@ -1,7 +1,3 @@
-/**
- * Version 2 of the file reader program in GoLang in a shorter way 
- */
-
 package main
 
 import (

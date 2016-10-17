@@ -1,7 +1,3 @@
-/**
- * Reading content of a file and output on the terminal in GoLang 
- */
-
 package main
 
 import (

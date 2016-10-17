@@ -1,7 +1,3 @@
-/**
- * Walking a directory tree recursively in GoLang 
- */
-
 package main
 
 // Importing the required packages
