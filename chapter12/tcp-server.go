@@ -1,4 +1,6 @@
-/* Socket programming in GoLang. TCP Server */
+/**
+ * Socket programming in GoLang. TCP Server 
+ */
 
 package main
 
@@ -8,32 +10,30 @@ import (
 	"net"
 )
 
-/* Server function */
-
+// Server function
 func server() {
-	/* Listen on port 9999 */
+	// Listen on port 9999
 	ln, err := net.Listen("tcp", ":9999")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	for {
-		/* Accept a connection */
+		// Accept a connection
 		c, err := ln.Accept()
 		if err != nil {
 			fmt.Println(err)
 			continue
 		}
 
-		/* Handle the connection */
+		// Handle the connection
 		go handleServerConnection(c)
 	}
 }
 
-/* Handle connection function */
-
+// Handle connection function
 func handleServerConnection(c net.Conn) {
-	/* Receive the message */
+	// Receive the message
 	var msg string
 	err := gob.NewDecoder(c).Decode(&msg)
 	if err != nil {
@@ -45,17 +45,16 @@ func handleServerConnection(c net.Conn) {
 	c.Close()
 }
 
-/* Client function */
-
+// Client function
 func client() {
-	/* Connect to the Server */
+	// Connect to the Server
 	c, err := net.Dial("tcp", "127.0.0.1:9999")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	/* Send a message */
+	// Send a message
 	msg := "Hello World from Client Computer"
 	fmt.Println("Sending", msg)
 
@@ -68,10 +67,9 @@ func client() {
 	c.Close()
 }
 
-/* Main function */
-
+// Main function
 func main() {
-	/* Run the goroutines :) */
+	// Run the goroutines :)
 	go server()
 	go client()
 

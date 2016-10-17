@@ -1,4 +1,6 @@
-/* Maps, Slices and Arrays */
+/**
+ * Maps, Slices and Arrays 
+ */
 
 package main
 

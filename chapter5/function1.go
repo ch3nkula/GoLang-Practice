@@ -1,4 +1,6 @@
-/* Functions in GoLang */
+/**
+ * Functions in GoLang 
+ */
 
 package main
 

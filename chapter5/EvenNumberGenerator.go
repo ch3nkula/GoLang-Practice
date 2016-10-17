@@ -1,4 +1,6 @@
-/* Even Number Generator */
+/**
+ * Even Number Generator
+ */
 
 package main
 
@@ -14,7 +16,7 @@ func EvenNumberGenerator() func() uint {
 	}
 }
 
-/* The main function */
+// The main function
 func main() {
 	nextEven := EvenNumberGenerator()
 	fmt.Println(nextEven())

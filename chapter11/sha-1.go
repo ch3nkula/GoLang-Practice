@@ -1,16 +1,16 @@
-/* Implementation of the SHA-1 crypto hash function in GoLang */
+/**
+ * Implementation of the SHA-1 crypto hash function in GoLang 
+ */
 
 package main
 
-/* Importing the crypto sha1 package */
-
+// Importing the crypto sha1 package
 import (
 	"crypto/sha1"
 	"fmt"
 )
 
-/* Main function */
-
+// Main function
 func main() {
 
 	h := sha1.New()

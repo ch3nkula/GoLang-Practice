@@ -1,4 +1,6 @@
-/* Concurrency in GoLang using Goroutines */
+/**
+ * Concurrency in GoLang using Goroutines
+ */
 
 package main
 
@@ -17,7 +19,7 @@ func f(n int) {
 }
 
 func main() {
-	/* The Goroutine */
+	// The Goroutine
 	for i := 0; i < 10; i++ {
 		go f(0)
 	}

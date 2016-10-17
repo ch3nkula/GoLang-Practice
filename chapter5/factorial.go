@@ -1,4 +1,6 @@
-/* Factorial function based on recursion in GoLang */
+/**
+ * Factorial function based on recursion in GoLang
+ */
 
 package main
 

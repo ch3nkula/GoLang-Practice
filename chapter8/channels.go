@@ -1,5 +1,7 @@
-/* Channels gives a way in which goroutines communicate with one another
-and synchronize their execution. Below is a simple code to demo it */
+/**
+ * Channels gives a way in which goroutines communicate with one another
+ * and synchronize their execution. Below is a simple code to demo it 
+ */
 
 package main
 

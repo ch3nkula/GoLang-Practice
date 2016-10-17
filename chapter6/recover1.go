@@ -1,5 +1,7 @@
-/* Recover a GoLang program from a panic. That is a
-   run-time error */
+/**
+ * Recover a GoLang program from a panic. That is a
+ * run-time error 
+ */
 
 package main
 

@@ -1,8 +1,10 @@
-/* Working and Manipulating strings in GoLang */
+/**
+ * Working and Manipulating strings in GoLang
+ */
 
 package main
 
-/* Importing a list of packages */
+// Importing a list of packages
 import (
 	"fmt"
 	"strings"
@@ -10,41 +12,41 @@ import (
 
 func main() {
 	fmt.Println(
-		/* True */
+		// True
 		strings.Contains("test", "es"),
 
-		/* Count is 2 */
+		// Count is 2
 		strings.Count("test", "t"),
 
-		/* True */
+		// True 
 		strings.HasPrefix("tests", "te"),
 
-		/* True */
+		// True
 		strings.HasSuffix("test", "st"),
 
-		/* Index is 1 */
+		// Index is 1
 		strings.Index("test", "e"),
 
-		/* "a - b" */
+		// "a - b"
 		strings.Join([]string{"a", "b"}, "-"),
 
-		/* == "aaaaa" */
+		// == "aaaaa"
 		strings.Repeat("a", 5),
 
-		/* "bbaa" */
+		// "bbaa"
 		strings.Replace("aaaa", "a", "b", 2),
 
-		/* []string{"a", "b", "c", "d", "e"} */
+		// []string{"a", "b", "c", "d", "e"}
 		strings.Split("a-b-c-d-e", "-"),
 
-		/* "test" */
+		// "test"
 		strings.ToLower("TEST"),
 
-		/* "TEST" */
+		// "TEST"
 		strings.ToUpper("test"),
 	)
 
-	/* Converting a byte to a string and vise versa */
+	// Converting a byte to a string and vise versa
 	arr := []byte("test")
 	str := string([]byte{'t', 'e', 's', 't'})
 
