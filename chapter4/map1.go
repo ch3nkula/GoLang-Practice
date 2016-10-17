@@ -1,5 +1,7 @@
-/* Maps are associative arrays, an unordered collection of key-value
-   pairs. For example, a hash table, dictionary etc... */
+/**
+ * Maps are associative arrays, an unordered collection of key-value
+ *  pairs. For example, a hash table, dictionary etc... 
+ */
 
 package main
 

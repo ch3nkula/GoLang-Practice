@@ -1,4 +1,6 @@
-/* Selecting a particular channel using the special select keyword in GoLang */
+/**
+ * Selecting a particular channel using the special select keyword in GoLang
+ */
 
 package main
 

@@ -1,4 +1,6 @@
-/* Closure: Definitions of functions in other functions */
+/**
+ * Closure: Definitions of functions in other functions 
+ */
 
 package main
 

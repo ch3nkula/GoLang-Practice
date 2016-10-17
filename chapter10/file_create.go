@@ -1,24 +1,26 @@
-/* Creating a file in GoLang */
+/**
+ * Creating a file in GoLang 
+ */
 
 package main
 
-/* Import packages */
+// Import packages
 import (
 	"os"
 )
 
-/* Main function */
+// Main function
 func main() {
 	file, err := os.Create("testing.txt")
 
 	if err != nil {
-		/* Handle the Error */
+		// Handle the Error
 		return
 	}
 
-	/* Execute the Close() if error occurs */
+	// Execute the Close() if error occurs
 	defer file.Close()
 
-	/* Write to the file */
+	// Write to the file
 	file.WriteString("test")
 }

@@ -1,4 +1,6 @@
-/* Variadic Functions */
+/**
+ * Variadic Functions 
+ */
 
 package main
 

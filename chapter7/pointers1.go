@@ -1,4 +1,6 @@
-/* Pointers in GoLang */
+/**
+ * Pointers in GoLang
+ */
 
 package main
 

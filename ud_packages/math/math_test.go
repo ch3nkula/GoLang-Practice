@@ -4,7 +4,7 @@ package math
 
 import "testing"
 
-/* Test pair structure */
+// Test pair structure
 type testpair struct {
 	values []float64
 	average float64
@@ -26,7 +26,7 @@ var testsum = []testpairsum {
 	{ []int{1, 2, 3}, 6 },
 }
 
-/* Testing the Average function */
+// Testing the Average function
 func TestAverage(t *testing.T) {
 	var v float64
 
@@ -37,7 +37,7 @@ func TestAverage(t *testing.T) {
 	}
 }
 
-/* Testing the Sum function */
+// Testing the Sum function
 func TestSum(t *testing.T) {
 	var s int
 
@@ -48,7 +48,7 @@ func TestSum(t *testing.T) {
 	}
 }
 
-/* Testing average pairs */
+// Testing average pairs
 func TestAveragePair(t *testing.T) {
 	for _, pair := range tests {
 		v := Average(pair.values)
@@ -62,7 +62,7 @@ func TestAveragePair(t *testing.T) {
 	}
 }
 
-/* Testing sum pairs */
+// Testing sum pairs 
 func TestSumPair(t *testing.T) {
 	for _, pair := range testsum {
 		s := Sum(pair.values...)

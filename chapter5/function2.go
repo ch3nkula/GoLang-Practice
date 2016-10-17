@@ -1,4 +1,6 @@
-/* Returning multiple values from a function */
+/**
+ * Returning multiple values from a function 
+ */
 
 package main
 

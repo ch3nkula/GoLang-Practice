@@ -2,7 +2,7 @@
 
 package math
 
-/* Finds the average of a series of numbers */
+// Finds the average of a series of numbers
 func Average(xs []float64) float64 {
 	total := float64(0)
 
@@ -13,7 +13,7 @@ func Average(xs []float64) float64 {
 	return total / float64(len(xs))
 }
 
-/* Finds the sum of a series of numbers */
+// Finds the sum of a series of numbers
 func Sum(x ...int) int {
 	total := int(0)
 

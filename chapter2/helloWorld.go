@@ -7,6 +7,6 @@ import "fmt"
 func main() {
 	fmt.Println("Hello World")
 
-	/* String concatenation */
+	// String concatenation
 	fmt.Println("Hello " + "World")
 }

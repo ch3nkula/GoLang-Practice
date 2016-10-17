@@ -1,10 +1,12 @@
-/* User a the main package */
+/**
+ * User a the main package 
+ */
 package main
 
-/* Import the input/output library */
+// Import the input/output library
 import "fmt"
 
-/* main function */
+// main function
 func main() {
 	fmt.Print("Enter a number: ")
 	var input float64

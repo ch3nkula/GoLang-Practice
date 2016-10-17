@@ -1,4 +1,6 @@
-/* HTTP Servers in GoLang */
+/**
+ * HTTP Servers in GoLang 
+ */
 
 package main
 
@@ -27,7 +29,7 @@ func hello(res http.ResponseWriter, req *http.Request) {
 	)
 }
 
-/* Main function */
+// Main function
 func main() {
 	http.HandleFunc("/hello", hello)
 	http.ListenAndServe(":9000", nil)
