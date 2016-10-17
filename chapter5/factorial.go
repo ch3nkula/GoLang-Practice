@@ -9,7 +9,7 @@ func factorial(x uint) uint {
 		return 1
 	}
 
-	return x * factorial(x - 1)
+	return x * factorial(x-1)
 }
 
 func main() {

@@ -1,4 +1,4 @@
-/* Defer: scheduling a function to run after another 
+/* Defer: scheduling a function to run after another
    function completes */
 
 package main

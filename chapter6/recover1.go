@@ -1,4 +1,4 @@
-/* Recover a GoLang program from a panic. That is a 
+/* Recover a GoLang program from a panic. That is a
    run-time error */
 
 package main

@@ -1,4 +1,4 @@
-/* Channels gives a way in which goroutines communicate with one another 
+/* Channels gives a way in which goroutines communicate with one another
 and synchronize their execution. Below is a simple code to demo it */
 
 package main
@@ -16,7 +16,7 @@ func pinger(c chan string) {
 
 func printer(c chan string) {
 	for {
-		msg := <- c
+		msg := <-c
 		fmt.Println(msg)
 		time.Sleep(time.Second * 1)
 	}

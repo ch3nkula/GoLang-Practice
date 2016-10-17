@@ -1,10 +1,10 @@
-/* Embedded types in GoLang: This is the is-a relation ship unlike the 
+/* Embedded types in GoLang: This is the is-a relation ship unlike the
    struct is the has-a relationship
 */
 
- package main
+package main
 
- import "fmt"
+import "fmt"
 
 type Person struct {
 	Name string
@@ -29,4 +29,3 @@ func main() {
 
 	// If a person and can and andriod is-a person, then android can talk :)
 }
-

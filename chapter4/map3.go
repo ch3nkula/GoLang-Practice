@@ -6,16 +6,16 @@ import "fmt"
 
 func main() {
 	elements := map[string]string{
-		"H" : "Hydrogen",
-		"He" : "Helium",
-		"Li" : "Lithium",
-		"Be" : "Berylium",
-		"B" : "Boron",
-		"C" : "Carbon",
-		"N" : "Nitrogen",
-		"O" : "Oxygen",
-		"F" : "Fluorine",
-		"Ne" : "Neon",
+		"H":  "Hydrogen",
+		"He": "Helium",
+		"Li": "Lithium",
+		"Be": "Berylium",
+		"B":  "Boron",
+		"C":  "Carbon",
+		"N":  "Nitrogen",
+		"O":  "Oxygen",
+		"F":  "Fluorine",
+		"Ne": "Neon",
 	}
 
 	fmt.Println(elements)

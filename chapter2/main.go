@@ -4,7 +4,7 @@ import "fmt"
 
 var x string = "Hello World!!!"
 
-func main(){
+func main() {
 	var helloWorld string = "Hello World!"
 
 	var hw string

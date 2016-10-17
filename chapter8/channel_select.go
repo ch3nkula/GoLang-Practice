@@ -28,10 +28,10 @@ func main() {
 	go func() {
 		for {
 			select {
-			case msg1 := <- c1:
-					fmt.Println(msg1)
-			case msg2 := <- c2:
-					fmt.Println(msg2)
+			case msg1 := <-c1:
+				fmt.Println(msg1)
+			case msg2 := <-c2:
+				fmt.Println(msg2)
 			}
 		}
 	}()

@@ -2,12 +2,15 @@
 
 package main
 
-import ("fmt" ; "sort")
+import (
+	"fmt"
+	"sort"
+)
 
 /* Person structure */
 type Person struct {
 	Name string
-	Age int
+	Age  int
 }
 
 /* ByName has type an array of struct Person */

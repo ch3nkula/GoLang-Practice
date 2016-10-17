@@ -2,7 +2,10 @@
 
 package main
 
-import ("net/http"; "io")
+import (
+	"io"
+	"net/http"
+)
 
 func hello(res http.ResponseWriter, req *http.Request) {
 	res.Header().Set(

@@ -10,39 +10,39 @@ import (
 
 func main() {
 	fmt.Println(
-			/* True */
-			strings.Contains("test", "es"),
+		/* True */
+		strings.Contains("test", "es"),
 
-			/* Count is 2 */
-			strings.Count("test", "t"),
+		/* Count is 2 */
+		strings.Count("test", "t"),
 
-			/* True */
-			strings.HasPrefix("tests", "te"),
+		/* True */
+		strings.HasPrefix("tests", "te"),
 
-			/* True */
-			strings.HasSuffix("test", "st"),
+		/* True */
+		strings.HasSuffix("test", "st"),
 
-			/* Index is 1 */
-			strings.Index("test", "e"),
+		/* Index is 1 */
+		strings.Index("test", "e"),
 
-			/* "a - b" */
-			strings.Join([]string{"a", "b"}, "-"),
+		/* "a - b" */
+		strings.Join([]string{"a", "b"}, "-"),
 
-			/* == "aaaaa" */
-			strings.Repeat("a", 5),
+		/* == "aaaaa" */
+		strings.Repeat("a", 5),
 
-			/* "bbaa" */
-			strings.Replace("aaaa", "a", "b", 2),
+		/* "bbaa" */
+		strings.Replace("aaaa", "a", "b", 2),
 
-			/* []string{"a", "b", "c", "d", "e"} */
-			strings.Split("a-b-c-d-e", "-"),
+		/* []string{"a", "b", "c", "d", "e"} */
+		strings.Split("a-b-c-d-e", "-"),
 
-			/* "test" */
-			strings.ToLower("TEST"),
+		/* "test" */
+		strings.ToLower("TEST"),
 
-			/* "TEST" */
-			strings.ToUpper("test"),
-		)
+		/* "TEST" */
+		strings.ToUpper("test"),
+	)
 
 	/* Converting a byte to a string and vise versa */
 	arr := []byte("test")

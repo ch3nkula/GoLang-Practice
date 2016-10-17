@@ -1,6 +1,6 @@
 /* Socket programming in GoLang. TCP Server */
 
-package main 
+package main
 
 import (
 	"encoding/gob"

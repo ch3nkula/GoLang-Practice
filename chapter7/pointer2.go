@@ -6,7 +6,7 @@ import "fmt"
 
 /* function to assign 1 to where "ptr" is pointing to */
 func one(ptr *int) {
-	*ptr = 1;
+	*ptr = 1
 }
 
 /* Main function */
