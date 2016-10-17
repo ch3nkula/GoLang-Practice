@@ -4,7 +4,10 @@
 
 package main
 
-import ("fmt"; "math")
+import (
+	"fmt"
+	"math"
+)
 
 /* Adding the interface support */
 type Shape interface {
@@ -41,7 +44,7 @@ func (c *Circle) area() float64 {
 	return math.Pi * c.r * c.r
 }
 
-/* Interface is really useful when finding the total area i.e. the sum of 
+/* Interface is really useful when finding the total area i.e. the sum of
    all the areas of each of the shapes
 */
 func totalArea(shapes ...Shape) float64 {

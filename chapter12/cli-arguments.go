@@ -2,7 +2,11 @@
 
 package main
 
-import ("fmt" ; "flag" ; "math/rand")
+import (
+	"flag"
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	/* Define the flags */

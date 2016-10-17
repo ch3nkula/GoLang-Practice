@@ -8,7 +8,7 @@ func multiple_return() (int, int) {
 	return 5, 6
 }
 
-func array_return() ([]int) {
+func array_return() []int {
 	return []int{1, 2}
 }
 
