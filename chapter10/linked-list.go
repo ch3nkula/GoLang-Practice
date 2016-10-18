@@ -1,7 +1,3 @@
-/**
- * A singly linked list in GoLang
- */
-
 package main
 
 import (
